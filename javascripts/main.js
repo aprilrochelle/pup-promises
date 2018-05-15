@@ -1,3 +1,7 @@
 const data = require('./data');
 
-data.initializer();
+require('./event');
+
+$(document).ready(() => {
+  data.initializer();
+});
